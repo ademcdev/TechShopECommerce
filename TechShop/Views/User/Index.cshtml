@@ -3,7 +3,7 @@
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_UserLayout.cshtml";
 }
-
+@model List<TechShop.UI.Dtos.ProductDtos.ResultProductDto>
 <!-- Begin Slider With Category Menu Area -->
 <div class="slider-with-banner">
     <div class="container">
@@ -13,124 +13,84 @@
                 <!--Category Menu Start-->
                 <div class="category-menu">
                     <div class="category-heading">
-                        <h2 class="categories-toggle"><span>categories</span></h2>
+                        <h2 class="categories-toggle"><span>Kategoriler</span></h2>
                     </div>
                     <div id="cate-toggle" class="category-menu-list">
                         <ul>
                             <li class="right-menu">
-                                <a href="~/techshop/shop-left-sidebar.html">Laptops</a>
+                                <a href="~/techshop/shop-left-sidebar.html">Bilgisayar Parçaları</a>
                                 <ul class="cat-mega-menu">
                                     <li class="right-menu cat-mega-title">
-                                        <a href="~/techshop/shop-left-sidebar.html">Prime Video</a>
-                                        <ul>
-                                            <li><a href="~/techshop/#">All Videos</a></li>
-                                            <li><a href="~/techshop/#">Blouses</a></li>
-                                            <li><a href="~/techshop/#">Evening Dresses</a></li>
-                                            <li><a href="~/techshop/#">Summer Dresses</a></li>
-                                            <li><a href="~/techshop/#">T-shirts</a></li>
-                                            <li><a href="~/techshop/#">Rent or Buy</a></li>
-                                            <li><a href="~/techshop/#">Your Watchlist</a></li>
-                                            <li><a href="~/techshop/#">Watch Anywhere</a></li>
-                                            <li><a href="~/techshop/#">Getting Started</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="right-menu cat-mega-title">
-                                        <a href="~/techshop/shop-left-sidebar.html">Computers</a>
-                                        <ul>
-                                            <li><a href="~/techshop/#">More to Explore</a></li>
-                                            <li><a href="~/techshop/#">TV & Video</a></li>
-                                            <li><a href="~/techshop/#">Audio & Theater</a></li>
-                                            <li><a href="~/techshop/#">Camera, Photo</a></li>
-                                            <li><a href="~/techshop/#">Cell Phones</a></li>
-                                            <li><a href="~/techshop/#">Headphones</a></li>
-                                            <li><a href="~/techshop/#">Video Games</a></li>
-                                            <li><a href="~/techshop/#">Wireless Speakers</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="right-menu cat-mega-title">
-                                        <a href="~/techshop/shop-left-sidebar.html">Electronics</a>
-                                        <ul>
-                                            <li><a href="~/techshop/#">Amazon Home</a></li>
-                                            <li><a href="~/techshop/#">Kitchen & Dining</a></li>
-                                            <li><a href="~/techshop/#">Furniture</a></li>
-                                            <li><a href="~/techshop/#">Bed & Bath</a></li>
-                                            <li><a href="~/techshop/#">Appliances</a></li>
-                                        </ul>
+                                        <a href="~/techshop/shop-left-sidebar.html">İşlemci</a>
+                                        <a href="~/techshop/shop-left-sidebar.html">Anakart</a>
+                                        <a href="~/techshop/shop-left-sidebar.html">RAM</a>
+                                        <a href="~/techshop/shop-left-sidebar.html">Ekran Kartı</a>
+                                        <a href="~/techshop/shop-left-sidebar.html">Bilgisayar Kasaları</a>
+                                        <a href="~/techshop/shop-left-sidebar.html">Powersupply</a>
+                                        <a href="~/techshop/shop-left-sidebar.html">Soğutucular</a>
+                                        <a href="~/techshop/shop-left-sidebar.html">Ses Kartı</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="right-menu">
-                                <a href="~/techshop/shop-left-sidebar.html">TV & Audio</a>
+                                <a href="~/techshop/shop-left-sidebar.html">Bilgisayar</a>
                                 <ul class="cat-mega-menu">
                                     <li class="right-menu cat-mega-title">
-                                        <a href="~/techshop/shop-left-sidebar.html">Chamcham</a>
-                                        <ul>
-                                            <li><a href="~/techshop/#">Office</a></li>
-                                            <li><a href="~/techshop/#">Gaming</a></li>
-                                            <li><a href="~/techshop/#">Chromebook</a></li>
-                                            <li><a href="~/techshop/#">Refurbished</a></li>
-                                            <li><a href="~/techshop/#">Touchscreen</a></li>
-                                            <li><a href="~/techshop/#">Ultrabooks</a></li>
-                                            <li><a href="~/techshop/#">Netbook</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="right-menu cat-mega-title">
-                                        <a href="~/techshop/shop-left-sidebar.html">Meito</a>
-                                        <ul>
-                                            <li><a href="~/techshop/#">Hard Drives</a></li>
-                                            <li><a href="~/techshop/#">Graphic Cards</a></li>
-                                            <li><a href="~/techshop/#">Processors (CPU)</a></li>
-                                            <li><a href="~/techshop/#">Memory</a></li>
-                                            <li><a href="~/techshop/#">Motherboards</a></li>
-                                            <li><a href="~/techshop/#">Fans & Cooling</a></li>
-                                            <li><a href="~/techshop/#">CD/DVD Drives</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="right-menu cat-mega-title">
-                                        <a href="~/techshop/shop-left-sidebar.html">Sony Bravia</a>
-                                        <ul>
-                                            <li><a href="~/techshop/#">Sound Cards</a></li>
-                                            <li><a href="~/techshop/#">Cases & Towers</a></li>
-                                            <li><a href="~/techshop/#">Casual Dresses</a></li>
-                                            <li><a href="~/techshop/#">Evening Dresses</a></li>
-                                            <li><a href="~/techshop/#">T-shirts</a></li>
-                                            <li><a href="~/techshop/#">Tops</a></li>
-                                        </ul>
+                                        <a href="~/techshop/shop-left-sidebar.html">Hazır Sistemler</a>
+                                        <a href="~/techshop/shop-left-sidebar.html">Notebook</a>
+                                        <a href="~/techshop/shop-left-sidebar.html">Masaüstü Bilgisayarlar</a>
+                                        <a href="~/techshop/shop-left-sidebar.html">Tablet</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="right-menu">
-                                <a href="~/techshop/shop-left-sidebar.html">Smartphone</a>
-                                <ul class="cat-mega-menu cat-mega-menu-2">
+                                <a href="~/techshop/shop-left-sidebar.html">Çevre Birimleri</a>
+                                <ul class="cat-mega-menu">
                                     <li class="right-menu cat-mega-title">
-                                        <a href="~/techshop/shop-left-sidebar.html">Camera Accessories</a>
-                                        <ul>
-                                            <li><a href="~/techshop/#">Octa Core</a></li>
-                                            <li><a href="~/techshop/#">Quad Core</a></li>
-                                            <li><a href="~/techshop/#">Dual Core</a></li>
-                                            <li><a href="~/techshop/#">7.0 Screen</a></li>
-                                            <li><a href="~/techshop/#">9.0 Screen</a></li>
-                                            <li><a href="~/techshop/#">Bags & Cases</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="right-menu cat-mega-title">
-                                        <a href="~/techshop/shop-left-sidebar.html">XailStation</a>
-                                        <ul>
-                                            <li><a href="~/techshop/#">Batteries</a></li>
-                                            <li><a href="~/techshop/#">Microphones</a></li>
-                                            <li><a href="~/techshop/#">Stabilizers</a></li>
-                                            <li><a href="~/techshop/#">Video Tapes</a></li>
-                                            <li><a href="~/techshop/#">Memory Card Readers</a></li>
-                                            <li><a href="~/techshop/#">Tripods</a></li>
-                                        </ul>
+                                        <a href="~/techshop/shop-left-sidebar.html">Monitor</a>
+                                        <a href="~/techshop/shop-left-sidebar.html">Klavye</a>
+                                        <a href="~/techshop/shop-left-sidebar.html">Mouse</a>
+                                        <a href="~/techshop/shop-left-sidebar.html">Kulaklık</a>
+                                        <a href="~/techshop/shop-left-sidebar.html">Mouse Pad</a>
+                                        <a href="~/techshop/shop-left-sidebar.html">Ses Sistemi</a>
+                                        <a href="~/techshop/shop-left-sidebar.html">Mikrafon</a>
+                                        <a href="~/techshop/shop-left-sidebar.html">Kamera</a>
+                                        <a href="~/techshop/shop-left-sidebar.html">Güç Kaynağı</a>
+                                        <a href="~/techshop/shop-left-sidebar.html">Oyuncu Koltukları</a>
+                                        <a href="~/techshop/shop-left-sidebar.html">Yayın Perdeleri</a>
+                                        <a href="~/techshop/shop-left-sidebar.html">Görüntü Aktarıcı Kaydedici</a>
+                                        <a href="~/techshop/shop-left-sidebar.html">Yayıncı Aksesuarları</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li><a href="~/techshop/#">Cameras</a></li>
-                            <li><a href="~/techshop/#">Headphone</a></li>
-                            <li><a href="~/techshop/#">Smartwatch</a></li>
-                            <li><a href="~/techshop/#">Out Door Room</a></li>
-                            <li><a href="~/techshop/#">Chamcham</a></li>
+                            <li class="right-menu">
+                                <a href="~/techshop/shop-left-sidebar.html">Depolama</a>
+                                <ul class="cat-mega-menu">
+                                    <li class="right-menu cat-mega-title">
+                                        <a href="~/techshop/shop-left-sidebar.html">SSD</a>
+                                        <a href="~/techshop/shop-left-sidebar.html">Harici Disk</a>
+                                        <a href="~/techshop/shop-left-sidebar.html">Sabit Disk</a>
+                                        <a href="~/techshop/shop-left-sidebar.html">NAS</a>
+                                        <a href="~/techshop/shop-left-sidebar.html">Optik Sürücü</a>
+                                        <a href="~/techshop/shop-left-sidebar.html">USB Bellek</a>
+                                        <a href="~/techshop/shop-left-sidebar.html">Flash Kart</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="right-menu">
+                                <a href="~/techshop/shop-left-sidebar.html">Network</a>
+                                <ul class="cat-mega-menu">
+                                    <li class="right-menu cat-mega-title">
+                                        <a href="~/techshop/shop-left-sidebar.html">Modem</a>
+                                        <a href="~/techshop/shop-left-sidebar.html">Router</a>
+                                        <a href="~/techshop/shop-left-sidebar.html">4G/5G Router</a>
+                                        <a href="~/techshop/shop-left-sidebar.html">Ağ Genişleticiler</a>
+                                        <a href="~/techshop/shop-left-sidebar.html">Mesh</a>
+                                        <a href="~/techshop/shop-left-sidebar.html">IP Kameralar</a>
+                                        <a href="~/techshop/shop-left-sidebar.html">Switchler</a>
+                                    </li>
+                                </ul>
+                            </li>
                             <li class="rx-child"><a href="~/techshop/#">Mobile & Tablets</a></li>
                             <li class="rx-child"><a href="~/techshop/#">Accessories</a></li>
                             <li class="rx-parent">
@@ -148,30 +108,36 @@
                 <div class="slider-area pt-sm-30 pt-xs-30">
                     <div class="slider-active owl-carousel">
                         <!-- Begin Single Slide Area -->
-                        <div class="single-slide align-center-left animation-style-02 bg-4">
-                            <div class="slider-progress"></div>
-                            <div class="slider-content">
-                                <h5>Sale Offer <span>-20% Off</span> This Week</h5>
-                                <h2>Chamcham Galaxy S9 | S9+</h2>
-                                <h3>Starting at <span>$589.00</span></h3>
-                                <div class="default-btn slide-btn">
-                                    <a class="links" href="~/techshop/shop-left-sidebar.html">Shopping Now</a>
+                        @foreach (var item in Model)
+                        {
+                            <div class="single-slide align-center-left animation-style-02 bg-4" style="background-image: url('@Url.Content("~/"+item.ProductCoverImage)');">
+                                <div class="slider-progress"></div>
+                                <div class="slider-content">
+                                    @* <h5>İndirim<span>-20% Off</span> This Week</h5> *@
+                                    <h2>@item.ProductTitle</h2>
+                                    <h3><span>@item.ProductPrice ₺</span> dan başlayan fiyatlarla</h3>
+                                    <div class="default-btn slide-btn">
+                                        <a class="links" href="~/techshop/shop-left-sidebar.html">Şimdi satın al</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        }
                         <!-- Single Slide Area End Here -->
                         <!-- Begin Single Slide Area -->
-                        <div class="single-slide align-center-left animation-style-01 bg-5">
-                            <div class="slider-progress"></div>
-                            <div class="slider-content">
-                                <h5>Sale Offer <span>Black Friday</span> This Week</h5>
-                                <h2>Work Desk Surface Studio 2018</h2>
-                                <h3>Starting at <span>$1599.00</span></h3>
-                                <div class="default-btn slide-btn">
-                                    <a class="links" href="~/techshop/shop-left-sidebar.html">Shopping Now</a>
+                        @foreach (var item in Model)
+                        {
+                            <div class="single-slide align-center-left animation-style-01 bg-4" style="background-image: url('@Url.Content("~/"+item.ProductCoverImage)');">
+                                <div class="slider-progress"></div>
+                                <div class="slider-content">
+                                    @* <h5>İndirim<span>-20% Off</span> This Week</h5> *@
+                                    <h2>@item.ProductTitle</h2>
+                                    <h3><span>@item.ProductPrice ₺</span> dan başlayan fiyatlarla</h3>
+                                    <div class="default-btn slide-btn">
+                                        <a class="links" href="~/techshop/shop-left-sidebar.html">Şimdi satın al</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        }
                         <!-- Single Slide Area End Here -->
                         <!-- Begin Single Slide Area -->
                         <div class="single-slide align-center-left animation-style-02 bg-6">
@@ -255,7 +221,7 @@
                                     <div class="product_desc_info">
                                         <div class="product-review">
                                             <h5 class="manufacturer">
-                                                <a href="~/techshop/shop-left-sidebar.html">Graphic Corner</a>
+                                                <a href="~/techshop/shop-left-sidebar.html">Grafik Köşesi</a>
                                             </h5>
                                             <div class="rating-box">
                                                 <ul class="rating">
@@ -2246,3 +2212,4 @@
     </div>
 </section>
 <!-- Li's Trending Product | Home V2 Area End Here -->
+                                        @* A:/Code/VSStudio/TechShop/TechShop/wwwroot/techshop/images/product/large-size/cpuryzen5.jpg *@

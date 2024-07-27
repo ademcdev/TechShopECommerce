@@ -8,5 +8,9 @@ namespace TechShop.UI.Controllers
         {
             return View();
         }
+        public IActionResult CategoryView()
+        {
+            return View();
+        }
     }
 }
